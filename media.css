@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: cursive;
+}
+
+body {
+    background-color: rgb(112, 111, 111);
+}
+
+.main_container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.music_container{
+    border: 2px solid rgb(71, 71, 71);
+    height: 95vh;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+    color: rgb(230, 225, 225);
+    color: black;
+    background-color: rgb(38, 119, 167);
+    box-shadow: 0px 7px 9px 4px rgb(33, 34, 34);
+}
+
+.switch {
+    position: relative;
+    bottom: 140px;
+    left: 170px;
+    cursor: pointer;
+}
+
+.switch:focus {
+    outline: none;
+}
+
+.dark {
+    position: relative;
+    bottom: 166px;
+    left: 100px;
+} 
+
+.music_container h2 {
+    padding: 40px 0;
+    font-size: 30px;
+    font-family: cursive;
+}
+
+.music_container h3 {
+    position: relative;
+    bottom: 30px;
+    letter-spacing: 2px;
+    opacity: 0.5;
+    font-family: cursive;
+}
+
+.music_container .img_container .image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 0px 7px 9px 4px rgb(150, 149, 149);
+    position: relative;
+    bottom: 40px;
+}
+
+.audio {
+    display: none;
+}
+
+.button_container {
+    height: 150px;
+    width: 200px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    position: relative;
+    right: 35px;
+    bottom: 20px;
+}
+
+.button_container i {
+    margin: 0 3px;
+}
+
+.fas {
+    font-size: 22px;
+    cursor: pointer;
+    padding: 0 20px;
+}
+
+#play-btn {
+    color: rgb(119, 114, 114);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    font-size: 18px;
+    transition: 0.5s;
+    transition-property: color backgraound-color box-shadow cursor;
+}
+
+.name {
+    opacity: .3;
+}
+
+#play-btn:hover {
+    box-shadow: 0px 5px 6px 2px gray;
+    cursor: pointer;
+    background-color: white;
+    color: rgb(168, 165, 165);
+}
+
+.anime {
+    animation: rotatePlayer 8s linear infinite ;
+}
+
+@keyframes rotatePlayer {
+    from { transform: rotate(0deg); }
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+#mute-btn {
+    position: relative;
+    left:25px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#replay-btn {
+    position: relative;
+    right: 25px;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+#fast-forward, #fast-backward {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.cross {
+    color: red;
+}
+
